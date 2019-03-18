@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Interactive Animatie</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Dit bericht wordt laten zien als de video niet automatisch afspeeld. -->
+  <div id="notifi"><div id="img"><i class="fas fa-bell"></i></div><div id="desc">Press the video to start playing!</div></div>
+
+  <div>
+    <!-- VIDEO PLAYER -->
+    <video id="player" class="videoplayer" onclick="this.play();" playsinline>
+      <source src="content/10.mp4" type="video/mp4">
+      Enable HTML5 video or use a different device/browser!
+    </video>
+  </div>
+
+  <div id="buttons" style="display: none; padding-top: 70vh;">
+
+    <!-- START KEUZE KNOPPEN -->
+    <!-- START KEUZE KNOPPEN -->
+    <!-- START KEUZE KNOPPEN -->
+    <div>
+      <p class="white largetext">The person you're chasing is to fast!</p>
+      <a href="15.html" class="button green">Run SONIC SPEEEEEED.</a>
+      <a href="16.html" class="button green">Watch out for all the trees.</a>
+    </div>
+    <!-- EINDE KEUZE KNOPPEN -->
+    <!-- EINDE KEUZE KNOPPEN -->
+    <!-- EINDE KEUZE KNOPPEN -->
+
+    <div>
+      <!-- Replay knop -->
+      <a href="#" class="button green" onclick="replaybtn()"><i class="fas fa-redo-alt"></i> Replay Video</a>
+    </div>
+
+  </div>
+
+  <!-- JavaScript :) -->
+  <script src="script.js" charset="utf-8"></script>
+
+</body>
+
+</html>
